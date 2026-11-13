@@ -71,7 +71,7 @@ npx http-server
 ## 배포
 
 **GitHub**: https://github.com/dubu5/campus-navi  
-**Vercel**: [배포 예정]
+**Live Site**: https://campus-navi-pi.vercel.app/
 
 ## 개발 과정
 
