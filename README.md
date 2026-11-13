@@ -75,7 +75,7 @@ npx http-server
 
 ## 개발 과정
 
-- **총 21개 프롬프트**를 통해 반복 개선
+- Claude Code를 통해 반복 개선
 - 경로 데이터 정확화, 디자인 최적화, 코드 정리
 - 자세한 내용은 [PROMPTS.md](PROMPTS.md) 참고
 
