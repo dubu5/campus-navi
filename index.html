@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목포대학교 공과대학 4호관 길찾기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 화면 1: 입구 선택 -->
+    <div id="entranceScreen" class="screen active">
+        <header>
+            <h1>목포대학교 공과대학 4호관 길찾기</h1>
+        </header>
+        <div class="container">
+            <section class="section">
+                <h2>현재 위치한 1층 입구를 선택하세요</h2>
+                <div class="entrance-grid">
+                    <button class="entrance-btn" data-entrance="left">
+                        <img src="images/왼쪽입구.jpg" alt="왼쪽 입구">
+                        <span>왼쪽</span>
+                    </button>
+                    <button class="entrance-btn" data-entrance="center">
+                        <img src="images/정면입구.jpg" alt="정면 입구">
+                        <span>정면</span>
+                    </button>
+                    <button class="entrance-btn" data-entrance="right">
+                        <img src="images/오른쪽입구.jpg" alt="오른쪽 입구">
+                        <span>오른쪽</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 화면 2: 호수 선택 -->
+    <div id="destinationScreen" class="screen">
+        <header>
+            <h1>목포대학교 공과대학 4호관 길찾기</h1>
+        </header>
+        <div class="container">
+            <section class="section">
+                <h2>찾으시는 3층 강의실을 선택하세요</h2>
+                <div class="destination-grid">
+                    <button class="destination-btn" data-destination="305">305호</button>
+                    <button class="destination-btn" data-destination="310">310호</button>
+                    <button class="destination-btn" data-destination="312">312호</button>
+                    <button class="destination-btn" data-destination="313">313호</button>
+                </div>
+            </section>
+
+            <div class="button-container">
+                <button id="backToEntranceBtn" class="btn btn-secondary">처음으로 돌아가기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 화면 3: 안내 결과 -->
+    <div id="resultScreen" class="screen">
+        <header>
+            <h1>목포대학교 공과대학 4호관 길찾기</h1>
+        </header>
+        <div class="container">
+            <!-- 선택 정보 표시 -->
+            <section class="selection-info">
+                <p><strong>출발:</strong> <span id="selectedEntrance"></span></p>
+                <p><strong>목적지:</strong> <span id="selectedDestination">호</span></p>
+            </section>
+
+            <!-- 경로 카드 -->
+            <section class="route-cards">
+                <div id="cardsContainer"></div>
+            </section>
+
+            <!-- 경고문 -->
+            <div class="warning">
+                <p>이동 중에는 화면을 보지 말고, 분기점에 멈춰서 확인하세요</p>
+            </div>
+
+            <!-- 버튼 -->
+            <div class="button-container">
+                <button id="restartBtn" class="btn btn-secondary">처음으로 돌아가기</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
